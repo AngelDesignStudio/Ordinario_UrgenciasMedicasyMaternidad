@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urgencias Médicas y Maternidad</title>
+    <link rel="stylesheet" href="css/EstiloServicios.css">
+</head>
+
+<body>
+    
+    <!-- Encabezado -->
+    <div class="encabezado">
+        <div class="logo-contenedor">
+            <a href="index.html"><img src="images/logotipoazul.png" class="logo-azul"></a>
+        </div>
+        <nav class="menu">
+            <a href="Bienvenida.html">INICIO</a>
+            <a href="Nosotros.html">NOSOTROS</a>
+            <a href="Servicios.html"class="activo">SERVICIOS</a>
+            <a href="Socios.html">SOCIOS</a>
+            <a href="Contacto.html">CONTACTO</a>
+            <a href="Reseñas.html">RESEÑAS</a>
+        </nav>
+    </div>
+    <div class="pleca">
+        <header>ATENCIÓN LAS 24 HORAS DEL DÍA</header>
+    </div>
+     <!-- Fin del Encabezado -->
+
+ <!-- Cuerpo -->
+  <div class="titulo-azul">
+        <section>
+            <b><h1 class="titulo">NUESTROS SERVICIOS</h1></b>
+            <p class="texto">Atención médica general y de urgencia.</p>
+        </section>
+    </div>
+
+    <!-- Pleca blanca -->
+    <div class="pleca-blanca"></div>
+
+    <!-- Contenedor del carrusel -->
+    <div class="contenedor-carrusel">
+
+    <!-- Botón izquierdo -->
+    <button class="boton-carrusel izquierda" onclick="document.getElementById('servicio-1').scrollIntoView({ behavior: 'smooth' })">&#10094;</button>
+
+    <!-- Carrusel -->
+    <div class="carrusel">
+        <!-- Cuadrado 1: Consultas Generales -->
+        <div id="servicio-1" class="cuadrado-servicio">
+            <h2 class="titulo-servicio">Consultas Generales</h2>
+            <img src="Images/simboloconsultas.png" alt="Consultas Generales" class="imagen-servicio">
+            <p class="descripcion-servicio">Atención personalizada para todas tus necesidades de salud diarias. Desde revisiones rutinarias hasta la evaluación de nuevos síntomas.</p>
+            <a href="Servicio-consultas.html" class="boton-serviciosinformacion">MÁS INFORMACIÓN</a>
+        </div>
+
+        <!-- Cuadrado 2: Tratamientos Médicos -->
+        <div id="servicio-2" class="cuadrado-servicio">
+            <h2 class="titulo-servicio">Tratamientos Médicos</h2>
+            <img src="images/simbolotratamiento.png" alt="Tratamientos Médicos" class="imagen-servicio">
+            <p class="descripcion-servicio">Ofrecemos una amplia gama de tratamientos para condiciones crónicas y agudas, asegurando un manejo efectivo y personalizado.</p>
+            <a href="Servicio-tratamientos.html" class="boton-serviciosinformacion">MÁS INFORMACIÓN</a>
+        </div>
+
+        <!-- Cuadrado 3: Ultrasonidos -->
+        <div id="servicio-3" class="cuadrado-servicio">
+            <h2 class="titulo-servicio">Ultrasonidos</h2>
+            <img src="images/simboloultrasonido.png" alt="Ultrasonidos" class="imagen-servicio">
+            <p class="descripcion-servicio">Ofrecemos una amplia gama de tratamientos para condiciones crónicas y agudas, asegurando un manejo efectivo y personalizado.</p>
+            <a href="Servicio-ultrasonidos.html" class="boton-serviciosinformacion">MÁS INFORMACIÓN</a>
+        </div>
+
+        <!-- Cuadrado 4: Atención de partos y cesáreas -->
+        <div id="servicio-4" class="cuadrado-servicio">
+            <h2 class="titulo-servicio">Atención de partos y cesáreas</h2>
+            <img src="images/simbolocirugia.png" alt="Atención de partos y cesáreas" class="imagen-servicio">
+            <p class="descripcion-servicio">Cuidados integrales para partos y cesáreas, asegurando la mejor atención para la madre y el bebé en un entorno seguro.</p>
+            <a href="Servicio-atencionpyc.html" class="boton-serviciosinformacion">MÁS INFORMACIÓN</a>
+        </div>
+    </div>
+
+    <!-- Botón derecho -->
+    <button class="boton-carrusel derecha" onclick="document.getElementById('servicio-4').scrollIntoView({ behavior: 'smooth' })">&#10095;</button>
+</div>
+
+
+    <!-- Pleca blanca -->
+    <div class="pleca-blanca"></div>
+    
+        <!-- Pleca azul -->
+    <div class="pleca-azul"></div>
+
+
+<!-- Fin del Cuerpo -->
+
+    <!-- Pie de página -->
+    <div class="pie">
+        <footer>
+            <div class="logo-pie">
+                <img src="images/logotipoblanco.png" alt="Logo" class="logo-pie-img">
+            </div>
+            <div class="telefono-pie">
+                <img src="images/numerodetelefono.png" alt="Teléfono" class="icono-telefono">
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
