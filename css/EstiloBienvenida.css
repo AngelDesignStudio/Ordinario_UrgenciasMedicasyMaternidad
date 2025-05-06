@@ -1,0 +1,412 @@
+/* ===== ESTILOS BASE ===== */
+body {
+    background-color: #001F5F; /* Azul Obscuro */
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding-bottom: 60px;
+}
+
+.display-5{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+/* Paleta de colores */
+:root {
+    --azul-obscuro: #001F5F;
+    --azul: #2655B5;
+    --azul-claro: #6F96E6;
+    --azul-muy-claro: #C8D4EC;
+    --gris-claro: #C1C1C1;
+    --gris-obscuro: #646464;
+}
+
+/* ===== ENCABEZADO ===== */
+.header-container {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+}
+
+/* Contenedor principal del navbar */
+.navbar {
+    padding: 0.5rem 1rem;
+    position: relative;
+}
+
+/* Logo */
+.logo-azul {
+    height: 65px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-azul:hover {
+    transform: scale(1.05);
+}
+
+/* Botón hamburguesa */
+.navbar-toggler {
+    order: -1;
+    margin-right: 0;
+    margin-left: 0.5rem;
+    border-color: var(--azul-obscuro);
+    padding: 0.25rem 0.5rem;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 31, 95, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    width: 1.25em;
+    height: 1.25em;
+}
+
+/* Menú de navegación - DESKTOP */
+.navbar-collapse {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 0.25rem;
+}
+
+.nav-link {
+    color: var(--azul-obscuro) !important;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem !important;
+    position: relative;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.nav-link:hover {
+    color: var(--azul-obscuro) !important;
+    font-weight: bold;
+}
+
+.nav-link:hover::after {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    bottom: 0;
+    width: calc(100% - 2rem);
+    height: 2px;
+    background-color: var(--azul-obscuro);
+}
+
+.nav-link.active {
+    color: var(--azul-obscuro) !important;
+    font-weight: bold;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    bottom: 0;
+    width: calc(100% - 2rem);
+    height: 2px;
+    background-color: var(--azul-obscuro);
+}
+
+/* Pleca de atención */
+.attention-bar {
+    background-color: var(--azul);
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.attention-text {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+/* ===== CONTENIDO PRINCIPAL ===== */
+/* Sección de bienvenida modificada */
+.welcome-section {
+    background-color: var(--azul); /* #2655B5 */
+    color: white;
+    text-align: center;
+    padding: 1.5rem !important;
+    margin: 1rem 0;
+    border-radius: 15px !important;
+}
+
+.welcome-title {
+    font-size: 5rem;
+    font-weight: 750;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.lead {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.logo-central {
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+/* Botones personalizados */
+.btn-custom {
+    background-color: var(--azul-claro);
+    color: white;
+    border: none;
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+}
+
+.btn-custom:hover {
+    background-color: var(--azul);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Pleca blanca modificada */
+.full-width-white-bar {
+    background-color: white;
+    height: 100px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-bottom: 4rem;
+}
+
+/* ===== PIE DE PÁGINA ===== */
+.footer-container {
+    background-color: #2655B5; /* Azul especificado */
+    padding: 2rem 0;
+    color: white;
+    margin-top: 60px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    height: 90px;
+    width: auto;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.footer-phone {
+    height: 30px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.footer-info {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    line-height: 1.4;
+}
+
+.footer-copyright {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-top: 1rem;
+}
+
+/* ===== RESPONSIVIDAD ===== */
+@media (min-width: 1200px) {
+    .welcome-title {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 1199px) {
+    .nav-link {
+        font-size: 1rem;
+        padding: 0.5rem 0.75rem !important;
+    }
+}
+
+@media (max-width: 992px) {
+    /* Logo centrado en móviles */
+    .navbar-brand {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0 auto;
+    }
+    
+    /* Menú desplegable - MOBILE */
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: auto;
+        background-color: white;
+        z-index: 1000;
+        padding: 1rem 1.5rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        text-align: left;
+    }
+    
+    .navbar-nav {
+        align-items: flex-start;
+        width: 100%;
+    }
+    
+    .nav-item {
+        margin: 0.25rem 0;
+        width: 100%;
+    }
+    
+    .nav-link {
+        padding: 0.5rem 0 !important;
+        text-align: left;
+        display: block;
+    }
+    
+    .nav-link:hover::after,
+    .nav-link.active::after {
+        left: 0;
+        width: 100%;
+    }
+    
+    .logo-azul {
+        height: 60px;
+    }
+    
+    /* Balance para centrar logo */
+    .navbar::before {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 50px;
+        visibility: hidden;
+    }
+    
+    /* Footer responsive */
+    .footer-logo {
+        height: 90px;
+    }
+    
+    .footer-phone {
+        height: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-azul {
+        height: 55px;
+    }
+    
+    .welcome-title {
+        font-size: 3rem;
+    }
+    
+    .lead {
+        font-size: 1.1rem;
+    }
+    
+    .logo-central {
+        max-width: 250px;
+    }
+    
+    .navbar-collapse {
+        padding: 1rem;
+    }
+    
+    .footer-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-azul {
+        height: 50px;
+        max-width: 180px;
+    }
+    
+    .attention-text {
+        font-size: 1rem;
+    }
+    
+    .btn-custom {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .logo-central {
+        max-width: 200px;
+    }
+    
+    .navbar-toggler {
+        padding: 0.2rem 0.4rem;
+    }
+    
+    .navbar-collapse {
+        padding: 0.75rem 1rem;
+    }
+    
+    .footer-container {
+        padding: 1.5rem 0;
+    }
+    
+    .footer-logo {
+        height: 60px;
+    }
+    
+    .footer-phone {
+        height: 20px;
+    }
+    
+    .footer-copyright {
+        font-size: 0.8rem;
+    }
+    
+    .welcome-title {
+        font-size: 1.8rem;
+    }
+    
+    .lead {
+        font-size: 1rem;
+    }
+}
+
+/* Efectos de transición */
+a, button, .nav-link, img {
+    transition: all 0.3s ease;
+}
